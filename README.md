@@ -1,6 +1,6 @@
 # 🧮 Calculadora de IMC
 
-Projeto desenvolvido por **Guilherme Oliver**.
+Projeto desenvolvido por **Guilherme Oliver**, **Lucas Borges** e **Artur Souza**.
 
 ## 📌 Descrição
 
@@ -24,3 +24,9 @@ Uma calculadora de IMC (Índice de Massa Corporal) feita com JavaScript para aju
 - Conversão segura de dados string para número usando `parseFloat`
 - Cálculo confiável de IMC: `peso / (altura * altura)`
 - Interface simples e intuitiva
+
+## 🧑‍💻 Autores
+
+- Guilherme Oliver
+- Lucas Borges
+- Artur Souza
