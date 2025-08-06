@@ -35,19 +35,17 @@ app.post('/calcular', (req, res) => {
         classificacao = 'Obesidade (grau III)';
     }
     
-    // Ler o arquivo HTML de resultado
     fs.readFile(process.cwd() + '/resultado.html', 'utf8', (err, data) => {
         if (err) {
             res.status(500).send('Erro interno do servidor');
             return;
         }
-        
-        // Substituir os placeholders pelos valores calculados
+
         let htmlContent = data
             .replace('{{nome}}', nome)
             .replace('{{imc}}', imc)
             .replace('{{classificacao}}', classificacao);
-        
+            
         res.send(htmlContent);
     });
 });
